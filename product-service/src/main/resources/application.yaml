@@ -1,0 +1,24 @@
+server:
+  port: 9090
+  error:
+    include-message: always
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 86716d696bae9dff35923a0d56d1bdcf06fa54aa4c1217bb34acb5f53c6e04f9
+    url: jdbc:postgresql://ec2-54-161-150-170.compute-1.amazonaws.com:5432/dftgktjqub5ofg
+    username: fmbsnxzdvgfmvu
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    show-sql: true
